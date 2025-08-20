@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Milionire Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Add inside <body> before #wrapper -->
+<div id="lang-select">
+  <select id="lang-dropdown">
+    <option value="en">English</option>
+    <option value="ru">Русский</option>
+    <option value="hy">Հայերեն</option>
+  </select>
+</div>
+      <div id="left">
+        <img id="img" src="./images/logo.jpg" alt="Logo" class="logo" />
+        <div id="help">
+          <div data-type="audience">👥</div>
+          <div data-type="fifty">➗</div>
+          <div data-type="call">📞</div>
+          <div data-type="change">🔀</div>
+        </div>
+        <div id="question">
+          <div id="question-text"></div>
+        </div>
+        <div id="answers">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <div id="right">
+        <div><u>$1,000,000</u></div>
+        <div>$500,000</div>
+        <div>$250,000</div>
+        <div>$125,000</div>
+        <div>$64,000</div>
+        <div><u>$32,000</u></div>
+        <div>$16,000</div>
+        <div>$8,000</div>
+        <div>$4,000</div>
+        <div>$2,000</div>
+        <div><u>$1,000</u></div>
+        <div>$500</div>
+        <div>$300</div>
+        <div>$200</div>
+        <div>$100</div>
+      </div>
+    </div>
+
+    <div id="sounds">
+      <audio id="sound-intro" controls>
+        <source src="./sounds/intro.mp3" type="audio/ogg" />
+      </audio>
+      <audio id="sound-new-game" controls>
+        <source src="./sounds/new-game.mp3" type="audio/ogg" />
+      </audio>
+      <audio id="sound-correct-answer" controls>
+        <source src="./sounds/correct-answer.mp3" type="audio/ogg" />
+      </audio>
+      <audio id="sound-wrong-answer" controls>
+        <source src="./sounds/wrong-answer.mp3" type="audio/ogg" />
+      </audio>
+    </div>
+
+    <script src="utilities.js"></script>
+    <script src="question.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
