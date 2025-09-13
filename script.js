@@ -209,7 +209,7 @@ for (let div of answersDiv) {
     reset();
 }, 1000);
             }
-        }, 5000);
+        }, 1000);
     });
 }
 
